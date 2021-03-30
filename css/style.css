@@ -10,6 +10,10 @@ body {
 	font-size: 10pt;
 }
 
+.sidepanel, .content-panel{
+	margin-top: -10px;
+}
+
 .bread{
 	background-color: rgb(221, 219, 219);
 	font-weight: bold;
