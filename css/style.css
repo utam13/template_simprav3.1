@@ -16,7 +16,7 @@ body {
 
 .bread{
 	background-color: rgb(221, 219, 219);
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 .btn-menu{
