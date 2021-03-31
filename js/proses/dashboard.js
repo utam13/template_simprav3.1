@@ -64,10 +64,10 @@ function grafik_dashboard(komponen) {
     });
 }
 
-$('#rup_paket_penyedia-tab').click(function () {
+$(document).ready(function () {
     grafik_dashboard('rup_paket_penyedia');
-})
-
-$('#rup_paket_swakelola-tab').click(function () {
     grafik_dashboard('rup_paket_swakelola');
-})
+    grafik_dashboard('grafik_tender');
+    grafik_dashboard('grafik_non_tender');
+    grafik_dashboard('grafik_mekanisme_lainnya');
+});

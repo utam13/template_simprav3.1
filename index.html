@@ -23,33 +23,31 @@
 
 <body>
 	<section>
-		<div class="content-fluid">
+		<div class="content-fluid ">
 			<!-- header -->
 			<div class="row">
 				<!-- sidebar -->
 				<div class="col-lg-12">
-					<div class="row">
-						<div class="col-lg-12">
-							<div class="jumbotron jumbotron-fluid">
-								<div class="container">
-									<div class="row">
-										<div class="col-sm-2 text-left">
-											<img src=" img/mini.png" alt="" class="w-50">
-										</div>
-										<div class="col-sm-10">
-											<h1 class="display-4">SIMPRA</h1>
-											<p class="lead">This is a modified jumbotron that occupies the entire
-												horizontal
-												space
-												of
-												its parent.</p>
-										</div>
-									</div>
+					<div class="jumbotron jumbotron-fluid">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-2 text-left">
+									<img src=" img/mini.png" alt="" class="w-50">
+								</div>
+								<div class="col-sm-10">
+									<h1 class="display-4">SIMPRA</h1>
+									<p class="lead">This is a modified jumbotron that occupies the entire
+										horizontal
+										space
+										of
+										its parent.</p>
 								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="sidepanel col-lg-3 bg-gray">
+					<div class="row">
+						<div class="sidepanel col-lg-3 pt-3 pb-3 bg-gray">
 							<div class="card shadow ml-2 mb-2 rounded-lg">
 								<div class="card-body">
 									<form action="">
@@ -408,7 +406,7 @@
 						</div>
 
 						<!-- content -->
-						<div class="content-panel col-lg-9">
+						<div class="content-panel col-lg-9 pt-3 pb-3 ">
 							<div class="card bread shadow mb-2 rounded-pill">
 								<div class=" card-body">
 									<div class="row">
@@ -423,22 +421,21 @@
 								</div>
 							</div>
 
-							<div class="card shadow rounded-lg">
-								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-tachometer-alt"></i>
-									Dashboard</h5>
+							<div class="card shadow mb-2 rounded-lg">
+								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
+									Grafik Rencana Umum Pengadaan</h5>
 								<div class="card-body">
 									<ul class="nav nav-tabs" id="myTab" role="tablist">
 										<li class="nav-item" role="presentation">
 											<a class="nav-link active" id="rup_paket_penyedia-tab" data-toggle="tab"
 												href="#rup_paket_penyedia" role="tab" aria-controls="rup_paket_penyedia"
-												aria-selected="true">Grafik RUP Paket
+												aria-selected="true">
 												Penyedia</a>
 										</li>
 										<li class="nav-item" role="presentation">
 											<a class="nav-link" id="rup_paket_swakelola-tab" data-toggle="tab"
 												href="#rup_paket_swakelola" role="tab"
-												aria-controls="rup_paket_swakelola" aria-selected="false">Grafik RUP
-												Paket Swakelola</a>
+												aria-controls="rup_paket_swakelola" aria-selected="false">Swakelola</a>
 										</li>
 									</ul>
 									<div class="tab-content" id="myTabContent">
@@ -466,7 +463,7 @@
 								</div>
 							</div>
 
-							<div class="card shadow rounded-lg">
+							<div class="card shadow rounded-lg mb-2">
 								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-table"></i>
 									Renacana Paket Pengadaan</h5>
 								<div class="card-body text-center ">
@@ -520,6 +517,45 @@
 
 											</tbody>
 										</table>
+									</div>
+								</div>
+							</div>
+
+							<div class="card shadow mb-2 rounded-lg mb-2">
+								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
+									Grafik Tender</h5>
+								<div id="grafik_tender" class="card-body text-center">
+									<div class="status-proses">
+										<div class="spinner-border" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<p>Proses Data...</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card shadow mb-2 rounded-lg mb-2">
+								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
+									Grafik Non Tender</h5>
+								<div id="grafik_non_tender" class="card-body text-center">
+									<div class="status-proses">
+										<div class="spinner-border" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<p>Proses Data...</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="card shadow mb-2 rounded-lg mb-2">
+								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
+									Grafik Mekanisme Lainnya</h5>
+								<div id="grafik_mekanisme_lainnya" class="card-body text-center">
+									<div class="status-proses">
+										<div class="spinner-border" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<p>Proses Data...</p>
 									</div>
 								</div>
 							</div>
