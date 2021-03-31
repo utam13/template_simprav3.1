@@ -407,7 +407,7 @@
 
 						<!-- content -->
 						<div class="content-panel col-lg-9">
-							<div class="card bread shadow mb-2">
+							<div class="card bread shadow mb-2 rounded-pill">
 								<div class=" card-body">
 									<div class="row">
 										<div class="btn-menu col-sm-1">
@@ -421,16 +421,38 @@
 								</div>
 							</div>
 
-							<div class="card shadow">
+							<div class="card shadow rounded">
+								<div class="card-header bg-primary text-light">
+									Dashboard
+								</div>
 								<div class="card-body">
-									<h5 class="card-title">Content</h5>
+									<!-- <h5 class="card-title">Content</h5>
 									<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
 									<p class="card-text">
 										Some quick example text to build on the card title and
 										make up the bulk of the card's content.
 									</p>
 									<a href="#" class="card-link">Card link</a>
-									<a href="#" class="card-link">Another link</a>
+									<a href="#" class="card-link">Another link</a> -->
+
+									<ul class="nav nav-tabs" id="myTab" role="tablist">
+										<li class="nav-item" role="presentation">
+											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+												role="tab" aria-controls="home" aria-selected="true">Grafik RUP Paket
+												Penyedia</a>
+										</li>
+										<li class="nav-item" role="presentation">
+											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+												role="tab" aria-controls="profile" aria-selected="false">Grafik RUP
+												Paket Swakelola</a>
+										</li>
+									</ul>
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="home" role="tabpanel"
+											aria-labelledby="home-tab">...</div>
+										<div class="tab-pane fade" id="profile" role="tabpanel"
+											aria-labelledby="profile-tab">...</div>
+									</div>
 								</div>
 							</div>
 						</div>
