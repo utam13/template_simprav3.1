@@ -60,3 +60,23 @@ body {
 .content-panel {
 	margin-left: -5px;
 }
+
+.nav-item a,
+.nav-item a:hover {
+	color: #37a4b4;
+	font-weight: 600;
+}
+
+table tr th,
+table tr td {
+	font-weight: normal;
+	/* font-size: 12pt; */
+	font-size: 10pt;
+	/* font-family: 'Times New Roman', Times, serif; */
+	/* font-family: Calibri; */
+}
+
+.status-proses{
+	padding-top: 20pt;
+	padding-bottom: 20pt;
+}

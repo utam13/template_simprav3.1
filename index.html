@@ -14,7 +14,9 @@
 	<link href="library/fontawesome/css/brands.css" rel="stylesheet" />
 	<link href="library/fontawesome/css/solid.css" rel="stylesheet" />
 
+	<!-- custom css -->
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/color.css" />
 
 	<title>SIMPRA Kota Balikpapan</title>
 </head>
@@ -47,8 +49,8 @@
 							</div>
 						</div>
 
-						<div class="sidepanel col-lg-3">
-							<div class="card shadow ml-2 mb-2">
+						<div class="sidepanel col-lg-3 bg-gray">
+							<div class="card shadow ml-2 mb-2 rounded-lg">
 								<div class="card-body">
 									<form action="">
 										<div class="form-group row">
@@ -421,37 +423,103 @@
 								</div>
 							</div>
 
-							<div class="card shadow rounded">
-								<div class="card-header bg-primary text-light">
-									Dashboard
-								</div>
+							<div class="card shadow rounded-lg">
+								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-tachometer-alt"></i>
+									Dashboard</h5>
 								<div class="card-body">
-									<!-- <h5 class="card-title">Content</h5>
-									<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-									<p class="card-text">
-										Some quick example text to build on the card title and
-										make up the bulk of the card's content.
-									</p>
-									<a href="#" class="card-link">Card link</a>
-									<a href="#" class="card-link">Another link</a> -->
-
 									<ul class="nav nav-tabs" id="myTab" role="tablist">
 										<li class="nav-item" role="presentation">
-											<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
-												role="tab" aria-controls="home" aria-selected="true">Grafik RUP Paket
+											<a class="nav-link active" id="rup_paket_penyedia-tab" data-toggle="tab"
+												href="#rup_paket_penyedia" role="tab" aria-controls="rup_paket_penyedia"
+												aria-selected="true">Grafik RUP Paket
 												Penyedia</a>
 										</li>
 										<li class="nav-item" role="presentation">
-											<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
-												role="tab" aria-controls="profile" aria-selected="false">Grafik RUP
+											<a class="nav-link" id="rup_paket_swakelola-tab" data-toggle="tab"
+												href="#rup_paket_swakelola" role="tab"
+												aria-controls="rup_paket_swakelola" aria-selected="false">Grafik RUP
 												Paket Swakelola</a>
 										</li>
 									</ul>
 									<div class="tab-content" id="myTabContent">
-										<div class="tab-pane fade show active" id="home" role="tabpanel"
-											aria-labelledby="home-tab">...</div>
-										<div class="tab-pane fade" id="profile" role="tabpanel"
-											aria-labelledby="profile-tab">...</div>
+										<div class="tab-pane text-center border-left border-right border-bottom fade show active"
+											id="rup_paket_penyedia" role="tabpanel"
+											aria-labelledby="rup_paket_penyedia-tab">
+											<div class="status-proses">
+												<div class="spinner-border" role="status">
+													<span class="sr-only">Loading...</span>
+												</div>
+												<p>Proses Data...</p>
+											</div>
+										</div>
+										<div class="tab-pane text-center border-left border-right border-bottom fade"
+											id="rup_paket_swakelola" role="tabpanel"
+											aria-labelledby="rup_paket_swakelola-tab">
+											<div class="status-proses">
+												<div class="spinner-border" role="status">
+													<span class="sr-only">Loading...</span>
+												</div>
+												<p>Proses Data...</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card shadow rounded-lg">
+								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-table"></i>
+									Renacana Paket Pengadaan</h5>
+								<div class="card-body text-center ">
+									<div class="status-proses">
+										<div class="spinner-border" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<p>Proses Data...</p>
+									</div>
+									<div class="table-responsive">
+										<table id="pemenang_jml_paket"
+											class="pemenang_jml_paket table table-striped table-hover table-bordered table-sm landing-table">
+											<thead class="bg-light-blue">
+												<tr>
+													<th scope="col" rowspan=3 style="width:5%">Jenis Pengadaan
+														Barang/Jasa</th>
+													<th scope="col" colspan=10 style="width:70%">Penyedia</th>
+													<th scope="col" rowspan=2 colspan=2 style="width:10%">Swakelola</th>
+													<th scope="col" colspan=2 style="width:15%">Total</th>
+												</tr>
+												<tr>
+													<th scope="col" colspan=2>
+														<= Rp. 200juta</th>
+													<th scope="col" colspan=2>> Rp. 200jt<br>
+														<= Rp. 2,5 Milyar</th>
+													<th scope="col" colspan=2>> Rp. 2,5 Milyar<br>
+														<= Rp. 50 Milyar</th>
+													<th scope="col" colspan=2>> Rp. 50 Milyar<br>
+														<= Rp. 100 Milyar</th>
+													<th scope="col" colspan=2>> Rp. 100 Milyar</th>
+													<th scope="col" colspan=2>Penyedia + Swakelola</th>
+												</tr>
+												<tr>
+													<th scope="col">Paket</th>
+													<th scope="col">Pagu</th>
+													<th scope="col">Paket</th>
+													<th scope="col">Pagu</th>
+													<th scope="col">Paket</th>
+													<th scope="col">Pagu</th>
+													<th scope="col">Paket</th>
+													<th scope="col">Pagu</th>
+													<th scope="col">Paket</th>
+													<th scope="col">Pagu</th>
+													<th scope="col">Paket</th>
+													<th scope="col">Pagu</th>
+													<th scope="col">Paket</th>
+													<th scope="col">Pagu</th>
+												</tr>
+											</thead>
+											<tbody>
+
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>
@@ -471,7 +539,7 @@
 									<div class="carousel-item text-center" data-interval="2000">
 										<img src="img/image.png" class="center-block w-50" alt="..." />
 									</div>
-									<div class="carousel-item text-center">
+									<div class="carousel-item text-center" data-interval="3000">
 										<img src="img/image.png" class="center-block w-50" alt="..." />
 									</div>
 								</div>
@@ -538,7 +606,9 @@
 	<script src="library/datatables/dataTables.bootstrap4.min.js"></script>
 
 	<!-- custome -->
+	<script src="js/proses/server.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/proses/dashboard.js"></script>
 </body>
 
 </html>
