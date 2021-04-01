@@ -14,12 +14,12 @@
     <link href="library/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="library/fontawesome/css/solid.css" rel="stylesheet" />
 
-    <link href="library/treemaker/lib/tree_maker-min.css" rel="stylesheet" />
-
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/color.css" />
-    <link href="css/organisation.css" rel="stylesheet" />
+
+    <!-- tree diagram -->
+    <link href="css/tree.diagram.css" rel="stylesheet" />
 
     <title>SIMPRA Kota Balikpapan</title>
 </head>
@@ -449,10 +449,46 @@
                                                 </div>
                                                 <p>Proses Data...</p>
                                             </div>
-                                            <div id="apbd_murni_chart">
-
+                                            <div class="col-sm-12 tree">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Parent</a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Child</a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">Grand Child</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Child</a>
+                                                                <ul>
+                                                                    <li><a href="#">Grand Child</a></li>
+                                                                    <li>
+                                                                        <a href="#">Grand Child</a>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">Great Grand Child</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">Great Grand Child</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">Great Grand Child</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li><a href="#">Grand Child</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="table-responsive">
+
+                                            <div class="col-sm-12 pt-4 table-responsive">
                                                 <table id="detail"
                                                     class="pemenang_jml_paket table table-striped table-hover table-bordered table-sm landing-table">
                                                     <thead class="bg-light-blue">
@@ -483,7 +519,79 @@
                                         </div>
                                         <div class="tab-pane text-center border-left border-right border-bottom fade"
                                             id="apdb_perubahan" role="tabpanel" aria-labelledby="apdb_perubahan-tab">
+                                            <div class="status-proses">
+                                                <div class="spinner-border" role="status">
+                                                    <span class="sr-only">Loading...</span>
+                                                </div>
+                                                <p>Proses Data...</p>
+                                            </div>
+                                            <div class="col-sm-12 tree">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Parent</a>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Child</a>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">Grand Child</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Child</a>
+                                                                <ul>
+                                                                    <li><a href="#">Grand Child</a></li>
+                                                                    <li>
+                                                                        <a href="#">Grand Child</a>
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="#">Great Grand Child</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">Great Grand Child</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="#">Great Grand Child</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li><a href="#">Grand Child</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
 
+                                            <div class="col-sm-12 pt-4 table-responsive">
+                                                <table id="detail"
+                                                    class="pemenang_jml_paket table table-striped table-hover table-bordered table-sm landing-table">
+                                                    <thead class="bg-light-blue">
+                                                        <tr>
+                                                            <th scope="col" rowspan=2 style="width:5%">No</th>
+                                                            <th scope="col" rowspan=2 style="width:10%">Satuan Kerja
+                                                            </th>
+                                                            <th scope="col" colspan=2 style="width:15%">Belanja
+                                                                Pengadaan</th>
+                                                            <th scope="col" colspan=5 style="width:70%">Belanja Non
+                                                                Pengadaan</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="col">Barang Jasa</th>
+                                                            <th scope="col">Modal</th>
+                                                            <th scope="col">Belanja Pegawai</th>
+                                                            <th scope="col">Belanja Hibah</th>
+                                                            <th scope="col">Belanja Bansos</th>
+                                                            <th scope="col">Belanja Tidak Terduga</th>
+                                                            <th scope="col">Dll</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -570,7 +678,6 @@
     <script src="library/highchart/code/modules/organization.js"></script>
     <script src="library/highchart/code/modules/exporting.js"></script>
     <script src="library/highchart/code/modules/accessibility.js"></script>
-    <script src="library/treemaker/lib/tree_maker-min.js"></script>
 
     <!-- DataTables -->
     <script src="library/datatables/jquery.dataTables.min.js"></script>
