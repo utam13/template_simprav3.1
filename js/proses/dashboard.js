@@ -2,11 +2,13 @@ function grafik_dashboard(komponen) {
     Highcharts.chart(komponen, {
 
         title: {
-            text: 'Solar Employment Growth by Sector, 2010-2016'
+            // text: 'Solar Employment Growth by Sector, 2010-2016'
+            text: ''
         },
 
         subtitle: {
-            text: 'Source: thesolarfoundation.com'
+            // text: 'Source: thesolarfoundation.com'
+            text: ''
         },
 
         yAxis: {
@@ -65,6 +67,7 @@ function grafik_dashboard(komponen) {
 }
 
 $(document).ready(function () {
+    grafik_dashboard('grafik_belanja_pengadaan_apbd_kota_balikpapan');
     grafik_dashboard('rup_paket_penyedia');
     grafik_dashboard('rup_paket_swakelola');
     grafik_dashboard('grafik_tender');
