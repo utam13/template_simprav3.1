@@ -11,3 +11,4 @@ $('.btn-menu').click(function () {
         $('.content-panel').addClass('col-lg-9');
     }
 })
+
