@@ -410,241 +410,190 @@
 							<nav class="nav-breadcrumb" aria-label="breadcrumb">
 								<ol class="breadcrumb">
 									<li class="breadcrumb-item btn-menu"><i class="fas fa-bars"></i></li>
-									<li class="breadcrumb-item active ml-auto px-2 page" aria-current="page">Dashboard</li>
+									<li class="breadcrumb-item active ml-auto px-2" aria-current="page">Pengaturan</li>
+                                    <li class="breadcrumb-item active px-2 page" aria-current="page">Data Pegawai</li>
+                                    <li class="breadcrumb-item px-2"><a href="#">Data Penyedia</a></li>
+                                    <li class="breadcrumb-item px-2"><a href="#">Link API INAPROC</a></li>
+                                    <li class="breadcrumb-item px-2"><a href="#">Integrasi Data INAPROC</a></li>
+                                    <li class="breadcrumb-item px-2"><a href="#">Perubahan Data</a></li>
+                                    
 								</ol>
 							</nav>
 
-							<div class="col-md-12 mt-3">
-								<div class="row">
-									<div class="col-md-3 mb-2">
-										<div class="card text-white bg-olive h-80">
-											<div class="card-body">
-												<div class="card-body-icon">
-													<i class="fas fa-fw fa-coins"></i>
-												</div>
-												<div class="ml-5 text-right">
-													<!-- <div class="spinner-border" role="status">
-														<span class="sr-only">Loading...</span>
-													</div> -->
-													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
-												</div>
-												<div class="mt-5 text-right">
-													<span class="card-caption">Belanja Pengadaan</span>
-												</div>
-											</div>
-										</div>
-									</div>
+                            <div class="card shadow rounded-lg mb-2">
+                                <h5 class="card-header bg-light-blue text-light"><i class="fas fa-table"></i>
+                                    Daftar Pegawai</h5>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#formpegawai"><i class="fas fa-plus"></i> Tambah</button>
 
-									<div class="col-md-3 mb-2">
-										<div class="card text-white bg-light-blue h-80">
-											<div class="card-body">
-												<div class="card-body-icon">
-													<i class="fas fa-fw fa-coins"></i>
-												</div>
-												<div class="ml-5 text-right">
-													<!-- <div class="spinner-border" role="status">
-														<span class="sr-only">Loading...</span>
-													</div> -->
-													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
-												</div>
-												<div class="mt-5 text-right">
-													<span class="card-caption">Total Pengadaan</span>
-												</div>
-											</div>
-										</div>
-									</div>
+                                            <div class="float-right">
+                                                <form class="form-inline">
+                                                    <div class="form-group">
+                                                        <label class="mx-sm-3"for="kategoris">Pencarian:</label>
+                                                        <select class="form-control form-control-sm" nama="kategori" id="kategori">
+                                                            <option value="kode">Kode</option>
+                                                            <option value="nip">NIP</option>
+                                                            <option value="nama">Nama</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group mx-sm-3">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control form-control-sm" name="cari" id="cari" placeholder="Cari...">
+                                                            <div class="input-group-append">
+                                                                <button type="submit" class="btn btn-primary btn-sm">Cari</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 table-responsive mt-2">
+                                            <table id="table"
+                                                class="table table-striped table-hover table-bordered table-sm rup-table"
+                                                style="width:100%;">
+                                                <thead class="bg-light-blue">
+                                                    <tr>
+                                                        <th scope="col">No.</th>
+                                                        <th scope="col">Kode</th>
+                                                        <th scope="col">NIP</th>
+                                                        <th scope="col">Nama</th>
+                                                        <th scope="col">Jabatan</th>
+                                                        <th scope="col">Satker</th>
+                                                        <th scope="col">Telp</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">No. SK</th>
+                                                        <th scope="col">Tgl. SK</th>
+                                                        <th scope="col">Role</th>
+                                                        <th scope="col">Level Akses</th>
+                                                        <th scope="col">User Name</th>
+                                                        <th scope="col">Password</th>
+                                                        <th scope="col">#</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+        
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-									<div class="col-md-3 mb-2">
-										<div class="card text-white bg-purple h-80">
-											<div class="card-body">
-												<div class="card-body-icon">
-													<i class="fas fa-fw fa-coins"></i>
-												</div>
-												<div class="ml-5 text-right">
-													<!-- <div class="spinner-border" role="status">
-														<span class="sr-only">Loading...</span>
-													</div> -->
-													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
-												</div>
-												<div class="mt-5 text-right">
-													<span class="card-caption">Pengadaan Selesai</span>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="col-md-3 mb-2">
-										<div class="card text-white bg-aqua h-80">
-											<div class="card-body">
-												<div class="card-body-icon">
-													<i class="fas fa-fw fa-coins"></i>
-												</div>
-												<div class="ml-5 text-right">
-													<!-- <div class="spinner-border" role="status">
-														<span class="sr-only">Loading...</span>
-													</div> -->
-													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
-												</div>
-												<div class="mt-5 text-right">
-													<span class="card-caption">Optimalisasi</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card shadow mb-2 rounded-lg mb-2">
-								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
-									Grafik Belanja Pengadaan APBD Kota Balikpapan 2021</h5>
-								<div id="grafik_belanja_pengadaan_apbd_kota_balikpapan" class="card-body text-center">
-									<div class="status-proses">
-										<div class="spinner-border" role="status">
-											<span class="sr-only">Loading...</span>
-										</div>
-										<p>Proses Data...</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="card shadow mb-2 rounded-lg">
-								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
-									Grafik Rencana Umum Pengadaan</h5>
-								<div class="card-body">
-									<ul class="nav nav-tabs" id="myTab" role="tablist">
-										<li class="nav-item" role="presentation">
-											<a class="nav-link active" id="rup_paket_penyedia-tab" data-toggle="tab"
-												href="#rup_paket_penyedia" role="tab" aria-controls="rup_paket_penyedia"
-												aria-selected="true">
-												Penyedia</a>
-										</li>
-										<li class="nav-item" role="presentation">
-											<a class="nav-link" id="rup_paket_swakelola-tab" data-toggle="tab"
-												href="#rup_paket_swakelola" role="tab"
-												aria-controls="rup_paket_swakelola" aria-selected="false">Swakelola</a>
-										</li>
-									</ul>
-									<div class="tab-content" id="myTabContent">
-										<div class="tab-pane text-center border-left border-right border-bottom fade show active"
-											id="rup_paket_penyedia" role="tabpanel"
-											aria-labelledby="rup_paket_penyedia-tab">
-											<div class="status-proses">
-												<div class="spinner-border" role="status">
-													<span class="sr-only">Loading...</span>
-												</div>
-												<p>Proses Data...</p>
-											</div>
-										</div>
-										<div class="tab-pane text-center border-left border-right border-bottom fade"
-											id="rup_paket_swakelola" role="tabpanel"
-											aria-labelledby="rup_paket_swakelola-tab">
-											<div class="status-proses">
-												<div class="spinner-border" role="status">
-													<span class="sr-only">Loading...</span>
-												</div>
-												<p>Proses Data...</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card shadow rounded-lg mb-2">
-								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-table"></i>
-									Rencana Paket Pengadaan</h5>
-								<div class="card-body text-center ">
-									<div class="status-proses">
-										<div class="spinner-border" role="status">
-											<span class="sr-only">Loading...</span>
-										</div>
-										<p>Proses Data...</p>
-									</div>
-									<div class="table-responsive">
-										<table id="pemenang_jml_paket"
-											class="pemenang_jml_paket table table-striped table-hover table-bordered table-sm landing-table">
-											<thead class="bg-light-blue">
-												<tr>
-													<th scope="col" rowspan=3 style="width:5%">Jenis Pengadaan
-														Barang/Jasa</th>
-													<th scope="col" colspan=10 style="width:70%">Penyedia</th>
-													<th scope="col" rowspan=2 colspan=2 style="width:10%">Swakelola</th>
-													<th scope="col" colspan=2 style="width:15%">Total</th>
-												</tr>
-												<tr>
-													<th scope="col" colspan=2>
-														<= Rp. 200juta</th>
-													<th scope="col" colspan=2>> Rp. 200jt<br>
-														<= Rp. 2,5 Milyar</th>
-													<th scope="col" colspan=2>> Rp. 2,5 Milyar<br>
-														<= Rp. 50 Milyar</th>
-													<th scope="col" colspan=2>> Rp. 50 Milyar<br>
-														<= Rp. 100 Milyar</th>
-													<th scope="col" colspan=2>> Rp. 100 Milyar</th>
-													<th scope="col" colspan=2>Penyedia + Swakelola</th>
-												</tr>
-												<tr>
-													<th scope="col">Paket</th>
-													<th scope="col">Pagu</th>
-													<th scope="col">Paket</th>
-													<th scope="col">Pagu</th>
-													<th scope="col">Paket</th>
-													<th scope="col">Pagu</th>
-													<th scope="col">Paket</th>
-													<th scope="col">Pagu</th>
-													<th scope="col">Paket</th>
-													<th scope="col">Pagu</th>
-													<th scope="col">Paket</th>
-													<th scope="col">Pagu</th>
-													<th scope="col">Paket</th>
-													<th scope="col">Pagu</th>
-												</tr>
-											</thead>
-											<tbody>
-
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-
-							<div class="card shadow mb-2 rounded-lg mb-2">
-								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
-									Grafik Tender</h5>
-								<div id="grafik_tender" class="card-body text-center">
-									<div class="status-proses">
-										<div class="spinner-border" role="status">
-											<span class="sr-only">Loading...</span>
-										</div>
-										<p>Proses Data...</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="card shadow mb-2 rounded-lg mb-2">
-								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
-									Grafik Non Tender</h5>
-								<div id="grafik_non_tender" class="card-body text-center">
-									<div class="status-proses">
-										<div class="spinner-border" role="status">
-											<span class="sr-only">Loading...</span>
-										</div>
-										<p>Proses Data...</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="card shadow mb-2 rounded-lg mb-2">
-								<h5 class="card-header bg-light-blue text-light"><i class="fas fa-chart-line"></i>
-									Grafik Mekanisme Lainnya</h5>
-								<div id="grafik_mekanisme_lainnya" class="card-body text-center">
-									<div class="status-proses">
-										<div class="spinner-border" role="status">
-											<span class="sr-only">Loading...</span>
-										</div>
-										<p>Proses Data...</p>
-									</div>
-								</div>
-							</div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="formpegawai" tabindex="-1" aria-labelledby="formpegawaiLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="formpegawaiLabel">Formulir Pegawai</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label for="kode" class="col-sm-2 col-form-label">Kode</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="kode" name="kode" value="" maxlength=150 required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="nip" class="col-sm-2 col-form-label">NIP</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="nip" name="nip" maxlength=150 required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="nama" name="nama" maxlength=150 required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="jabatan" class="col-sm-2 col-form-label">Jabatan</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="jabatan" name="jabatan" maxlength=150 required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="satker" class="col-sm-2 col-form-label">Satker</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control" nama="satker" id="satker" required>
+                                                            <option value="">Pilih</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="telp" class="col-sm-2 col-form-label">Telp</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="telp" name="telp" maxlength=150 required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="email" name="email" maxlength=150 required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group row">
+                                                    <label for="nosk" class="col-sm-3 col-form-label">No. SK</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="nosk" name="nosk" maxlength=150 required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="tglsk" class="col-sm-3 col-form-label">Tgl. SK</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="date" class="form-control" id="tglsk" name="tglsk" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="role" class="col-sm-3 col-form-label">Role</label>
+                                                    <div class="col-sm-5">
+                                                        <select class="form-control" nama="role" id="role">
+                                                            <option value="">Pilih</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="levelakses" class="col-sm-3 col-form-label">Level Akses</label>
+                                                    <div class="col-sm-5">
+                                                        <select class="form-control" nama="levelakses" id="levelakses" required>
+                                                            <option value="">Pilih</option>
+                                                            <option value="1">Admin</option>
+                                                            <option value="2">Supervisor</option>
+                                                            <option value="3">User</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="username" class="col-sm-3 col-form-label">User Name</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control" id="username" name="username" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="password" class="col-sm-3 col-form-label">Password</label>
+                                                    <div class="col-sm-6">
+                                                        <input type="password" class="form-control" id="password" name="password" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </div>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -730,7 +679,6 @@
 	<!-- custome -->
 	<script src="js/proses/server.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/proses/dashboard.js"></script>
 	<script src="js/datatables.custom.js"></script>
 </body>
 
