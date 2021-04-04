@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- fontawesome -->
+    <link href="library/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="library/fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="library/fontawesome/css/solid.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+
+    <title>SIMPRA Kota Balikpapan</title>
+</head>
+
+<body>
+    <section>
+        <div class="content-fluid ">
+            <!-- header -->
+            <div class="row">
+                <!-- sidebar -->
+                <div class="col-lg-12">
+                    <div class="jumbotron jumbotron-fluid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-left">
+                                    <img src=" img/mini.png" alt="" class="w-50">
+                                </div>
+                                <div class="col-sm-10">
+                                    <h1 class="display-4">SIMPRA</h1>
+                                    <p class="lead">This is a modified jumbotron that occupies the entire
+                                        horizontal
+                                        space
+                                        of
+                                        its parent.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="sidepanel col-lg-3 pt-3 pb-3 bg-gray">
+                            <div class="card shadow ml-2 mb-2 rounded-lg">
+                                <div class="card-body">
+                                    <form action="">
+                                        <div class="form-group row">
+                                            <label for="username" class="col-lg-4 col-form-label">User Name</label>
+                                            <div class="col-lg-8">
+                                                <input type="email" class="form-control form-control-sm"
+                                                    id="username" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="password" class="col-lg-4 col-form-label">Password</label>
+                                            <div class="col-lg-8">
+                                                <input type="password" class="form-control form-control-sm"
+                                                    id="password" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-lg-6">
+                                                <button type="button" class="btn btn-secondary btn-sm">Lupa <i
+                                                        class="fas fa-question"></i> </button>
+                                            </div>
+                                            <div class="col-lg-6 text-right">
+                                                <button type="submit" class="btn btn-primary btn-sm">
+                                                    <i class="fas fa-unlock-alt"></i> Sign In</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="card shadow ml-2 mb-2">
+                                <div class="card-body">
+                                    <div class="row ml-1 mr-1">
+                                        <div class="col-sm-4">
+                                            <img src=" img/none.png" alt="" class="shadow-lg w-100">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="form-group row">
+                                                <label for="">NIP</label>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="">Nama</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 text-right">
+                                            <button type="submit" class="btn btn-primary btn-sm">
+                                                <i class="fas fa-lock"></i> Sign Out</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow ml-2">
+                                <div class="accordion sidebar" id="sidebar" aria-multiselectable="true">
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header" id="dashboard">
+                                                <i class="fas fa-tachometer-alt"></i> Dashboard
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="strukturapbd"
+                                                data-toggle="collapse" data-target="#strukturapbdsub"
+                                                aria-expanded="true" aria-controls="strukturapbdsub">
+                                                <i class="fas fa-sitemap"></i> Struktur APBD
+                                                <i class="close btn-close fas fa-angle-down"></i>
+                                            </div>
+                                        </a>
+                                        <div id="strukturapbdsub" class="collapse" aria-labelledby="strukturapbd"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fas fa-minus mr-2"></i> Struktur Anggaran</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fas fa-minus mr-2"></i> Rincian Belanja
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header" id="rupuser">
+                                                <i class="fas fa-boxes"></i> Rencana Umum Pengadaan
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="rup" data-toggle="collapse"
+                                                data-target="#rupsub" aria-expanded="true" aria-controls="rupsub">
+                                                <i class="fas fa-boxes"></i> Rencana Umum Pengadaan
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="rupsub" class="collapse" aria-labelledby="rup" data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fas fa-minus mr-2"></i> Rekapitulasi
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fas fa-minus mr-2"></i> Histori Revisi Paket
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="tender" data-toggle="collapse"
+                                                data-target="#tendersub" aria-expanded="true" aria-controls="tendersub">
+                                                <i class="fas fa-flag-checkered"></i> Tender
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="tendersub" class="collapse" aria-labelledby="tender"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekapitulasi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Paket</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="nontender" data-toggle="collapse"
+                                                data-target="#nontendersub" aria-expanded="true"
+                                                aria-controls="tendersub">
+                                                <i class="fas fa-flag"></i> Non Tender
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="nontendersub" class="collapse" aria-labelledby="nontender"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekapitulasi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Paket</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="pencatatan"
+                                                data-toggle="collapse" data-target="#pencatatansub" aria-expanded="true"
+                                                aria-controls="pencatatansub">
+                                                <i class="fas fa-book-open"></i> Pencatatan
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="pencatatansub" class="collapse" aria-labelledby="pencatatan"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Non Tender</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Swakelola</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header" id="epurchasing">
+                                                <i class="fas fa-laptop"></i> ePurchasing
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="realisasi" data-toggle="collapse"
+                                                data-target="#realisasisub" aria-expanded="true"
+                                                aria-controls="realisasisub">
+                                                <i class="fas fa-university"></i> Realisasi
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="realisasisub" class="collapse" aria-labelledby="realisasi"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekapitulasi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Paket</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="monitoring"
+                                                data-toggle="collapse" data-target="#monitoringsub" aria-expanded="true"
+                                                aria-controls="monitoringsub">
+                                                <i class="fas fa-tv"></i> Monitoring
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="monitoringsub" class="collapse" aria-labelledby="monitoring"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Paket
+                                                        Strategis</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Sumber Dana</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Penyedia</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> PPK</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Personil</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Kelompok
+                                                        Kerja</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="laporan" data-toggle="collapse"
+                                                data-target="#laporansub" aria-expanded="true"
+                                                aria-controls="laporansub">
+                                                <i class="fas fa-book"></i> Laporan
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="laporansub" class="collapse" aria-labelledby="laporan"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekap Rencana
+                                                        Umum Pengadaan</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekap Tender
+                                                        Per-Jenis/Metode</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekap Tender
+                                                        Per-Satuan Kerja</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Tender</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekap Non
+                                                        Tender Per-Jenis/Metode</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekap Non
+                                                        Tender Per-Satuan Kerja</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian Non
+                                                        Tender</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        ePurchasing</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Pencatatan Non Tender</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Pencatatan Swakelola</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rekapitulasi
+                                                        Pengadaan Barang/Jasa</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian Sumber
+                                                        Dana</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Per-PPK</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Per-Personil Pengadaan</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Rincian
+                                                        Per-Kelompok Kerja</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <a href="#">
+                                            <div class="card-header collapse-menu" id="pengaturan"
+                                                data-toggle="collapse" data-target="#pengaturansub" aria-expanded="true"
+                                                aria-controls="pengaturansub">
+                                                <i class="fas fa-cogs"></i> Pengaturan
+                                                <i class="close btn-close fas fa-angle-left"></i>
+                                            </div>
+                                        </a>
+                                        <div id="pengaturansub" class="collapse" aria-labelledby="pengaturan"
+                                            data-parent="#sidebar">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Data Pegawai</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Data
+                                                        Penyedia</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Link API
+                                                        INAPROC</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Integrasi Data
+                                                        INAPROC</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"><i class="fas fa-minus mr-2"></i> Perubahan
+                                                        Data</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="content-panel col-lg-9 pt-3 pb-3 ">
+                            <nav class="nav-breadcrumb" aria-label="breadcrumb">
+								<ol class="breadcrumb">
+									<li class="breadcrumb-item btn-menu"><i class="fas fa-bars"></i></li>
+									<li class="breadcrumb-item active ml-auto px-2" aria-current="page">Realisasi</li>
+                                    <li class="breadcrumb-item px-2"><a href="#">Rekapitulasi</a></li>
+                                    <li class="breadcrumb-item active px-2 page" aria-current="page">Rincian Paket</li>
+								</ol>
+							</nav>
+
+							<div class="col-md-12 mt-3">
+								<div class="row">
+									<div class="col-md-3 mb-2">
+										<div class="card text-white bg-olive h-80">
+											<div class="card-body">
+												<div class="card-body-icon">
+													<i class="fas fa-fw fa-coins"></i>
+												</div>
+												<div class="ml-5 text-right">
+													<!-- <div class="spinner-border" role="status">
+														<span class="sr-only">Loading...</span>
+													</div> -->
+													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
+												</div>
+												<div class="mt-5 text-right">
+													<span class="card-caption">Belanja Pengadaan</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3 mb-2">
+										<div class="card text-white bg-light-blue h-80">
+											<div class="card-body">
+												<div class="card-body-icon">
+													<i class="fas fa-fw fa-coins"></i>
+												</div>
+												<div class="ml-5 text-right">
+													<!-- <div class="spinner-border" role="status">
+														<span class="sr-only">Loading...</span>
+													</div> -->
+													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
+												</div>
+												<div class="mt-5 text-right">
+													<span class="card-caption">Total Pengadaan</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3 mb-2">
+										<div class="card text-white bg-purple h-80">
+											<div class="card-body">
+												<div class="card-body-icon">
+													<i class="fas fa-fw fa-coins"></i>
+												</div>
+												<div class="ml-5 text-right">
+													<!-- <div class="spinner-border" role="status">
+														<span class="sr-only">Loading...</span>
+													</div> -->
+													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
+												</div>
+												<div class="mt-5 text-right">
+													<span class="card-caption">Pengadaan Selesai</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-3 mb-2">
+										<div class="card text-white bg-aqua h-80">
+											<div class="card-body">
+												<div class="card-body-icon">
+													<i class="fas fa-fw fa-coins"></i>
+												</div>
+												<div class="ml-5 text-right">
+													<!-- <div class="spinner-border" role="status">
+														<span class="sr-only">Loading...</span>
+													</div> -->
+													<span class="card-value"><small>Rp.</small><b>10,000</b></span>
+												</div>
+												<div class="mt-5 text-right">
+													<span class="card-caption">Optimalisasi</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+                            <div class="card shadow rounded-lg mb-2">
+                                <h5 class="card-header bg-light-blue text-light"><i class="fas fa-table"></i>
+                                    Rincian Paket</h5>
+                                <div class="card-body table-responsive">
+                                    <table id="table"
+                                        class="table table-striped table-hover table-bordered table-sm rup-table"
+                                        style="width:100%;">
+                                        <thead class="bg-light-blue">
+                                            <tr>
+                                                <th scope="col" rowspan=2>Kode Paket</th>
+                                                <th scope="col" rowspan=2>Kode RUP Paket</th>
+                                                <th scope="col" rowspan=2>Satker</th>
+                                                <th scope="col" rowspan=2>Kegiatan</th>
+                                                <th scope="col" rowspan=2>Nama Paket</th>
+                                                <th scope="col" rowspan=2>PPK</th>
+                                                <th scope="col" rowspan=2>Pagu</th>
+                                                <th scope="col" rowspan=2>Nilai Kontrak</th>
+                                                <th scope="col" colspan=2>Sisa Kontrak</th>
+                                                <th scope="col" rowspan=2>Penyedia</th>
+                                                <th scope="col" colspan=2>Realisasi Kontrak</th>
+                                                <th scope="col" rowspan=2>Status Pelaksanaan</th>
+                                                <th scope="col" rowspan=2>Status Strategis</th>
+                                                <th scope="col" rowspan=2>Keterangan</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">Rp</th>
+                                                <th scope="col">Persentase</th>
+                                                <th scope="col">Rp</th>
+                                                <th scope="col">Persentase</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <div class=" col-lg-12">
+                    <div class="row">
+                        <div class="col-md-4 pt-4 pb-2 pl-4">
+                            <div id="carouselExampleInterval" class="carousel slide w-100" data-ride="carousel">
+                                <div class="carousel-inner ">
+                                    <div class="carousel-item active text-center" data-interval="10000">
+                                        <img src="img/image.png" class="center-block w-50" alt="..." />
+                                    </div>
+                                    <div class="carousel-item text-center" data-interval="2000">
+                                        <img src="img/image.png" class="center-block w-50" alt="..." />
+                                    </div>
+                                    <div class="carousel-item text-center" data-interval="3000">
+                                        <img src="img/image.png" class="center-block w-50" alt="..." />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center pt-4 pb-2">
+                            <div class="footer-head">
+                                <h3>kontak kami</h3>
+                                <p>
+                                    Bagian Pengadaan Barang/Jasa Sekretariat Daerah
+                                    Kota
+                                    Balikpapan
+                                    <br />
+                                    Kantor Wali Kota Balikpapan
+                                </p>
+                                <div class="footer-contacts">
+                                    <p>
+                                        Jln. Jend. Sudirman RT. 13 No. 01<br />Kota
+                                        Balikpapan<br />Provinsi
+                                        Kalimantan Timur - 76100
+                                    </p>
+                                    <p><span class="text-info">Tel:</span> +62 542
+                                        416 515</p>
+                                    <p><span class="text-info">Email:</span>
+                                        lpsebpp@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pt-4 pr-4">
+                            <iframe class="bg-secondary shadow"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8282983250456!2d116.82772220000001!3d-1.2764167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTYnMzUuMSJTIDExNsKwNDknMzkuOCJF!5e0!3m2!1sid!2sid!4v1601538148004!5m2!1sid!2sid"
+                                width="100%" height="220" frameborder="0" style="border: 0" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pt-3 text-center">
+                        <p>
+                            &copy; Copyright
+                            <strong>Bagian Pengadaan Barang/Jasa Sekretariat Daerah
+                                Kota
+                                Balikpapan</strong><br />SIMPRA ver. 3.1 | 2021
+                        </p>
+                        <p class="shadow bg-secondary text-white">
+                            <a href="https://utam13.github.io/cybercom/" target="_blank"
+                                class="text-decorateds-none text-white">
+                                Powered by CyberCom</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="library/datatables/jquery.dataTables.min.js"></script>
+    <script src="library/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- custome -->
+    <script src="js/proses/server.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/datatables.custom.js"></script>
+</body>
+
+</html>
