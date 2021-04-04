@@ -6,7 +6,7 @@ body {
 	padding: 0px;
 	overflow-x: hidden;
 
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-family: tahoma;
 	font-size: 10pt;
 }
 
@@ -14,17 +14,27 @@ body {
 	margin-top: -26px;
 }
 
-.bread{
+.breadcrumb{
 	background-color: rgb(221, 219, 219);
-	/* font-weight: bold; */
+	padding-top: 10px;
+}
+
+.breadcrumb .page{
+	font-weight: bold;
+}
+
+.breadcrumb a{
+	text-decoration: none;
+}
+
+
+.breadcrumb .breadcrumb-item:nth-child(2)::before {
+	content: "";
 }
 
 .btn-menu{
 	cursor: pointer;
-}
-
-.breadmenu a{
-	text-decoration: none;
+	
 }
 
 .sidebar .card .card-header {
@@ -64,6 +74,32 @@ body {
 .accordion>.card>.card-header{
 	cursor: pointer;
 }
+
+/* card icon */
+.card-value {
+	font-size: 2rem;
+}
+
+.card-value small {
+	font-size: 1rem;
+}
+
+.card-body-icon {
+	position: absolute;
+	z-index: 0;
+	top: -0.5rem;
+	left: 0.5rem;
+	opacity: 0.3;
+	font-size: 5rem;
+	/* -webkit-transform: rotate(15deg);
+	transform: rotate(15deg); */
+}
+
+.card-caption {
+	font-size: 1rem;
+	font-weight: bold;
+}
+/* end card icon */
 
 #container h4 {
     text-transform: none;
