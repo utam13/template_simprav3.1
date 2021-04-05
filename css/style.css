@@ -47,36 +47,6 @@ body {
 	
 }
 
-.sidebar .card .card-header {
-	background-color: rgb(218, 216, 216);
-}
-
-.sidebar .card a {
-	text-decoration: none;
-	color: black;
-}
-
-.sidebar .card .collapse {
-	background-color: rgb(255, 255, 255);
-}
-
-.sidebar .card ul {
-	margin-top: 10px;
-	margin-left: 30px;
-}
-
-.sidebar .card ul li {
-	padding: 5px;
-}
-
-.collapse-menu[data-toggle="collapse"] .btn-close {
-	content: "\f104";
-}
-
-.collapse-menu[data-toggle="collapse"].collapsed .btn-close {
-	transform: rotate(-90deg);
-}
-
 .content-panel {
 	margin-left: -5px;
 }
