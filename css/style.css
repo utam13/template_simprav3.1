@@ -10,8 +10,18 @@ body {
 	font-size: 10pt;
 }
 
+/* .jumbotron{
+	margin-left: -10px;
+	margin-right: -10px;
+	width: 100%;
+} */
+
 .sidepanel, .content-panel{
 	margin-top: -26px;
+}
+
+.sidepanel-bg-dark{
+	background-color: #3b4248;
 }
 
 .breadcrumb{
