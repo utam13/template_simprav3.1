@@ -40,7 +40,7 @@
   /* letter-spacing: 0.0625rem; */
   font-weight: 600;
   /* font-size: 0.75rem; */
-  background-color: #6f7c89;
+  background-color: #1A2226; /*#6f7c89;*/
 }
 
 .list-link {
@@ -359,7 +359,7 @@
 }
 
 .list-bg-dark .list-hidden {
-  background-color: #272727;
+  background-color: #2C3B41;/*#272727;*/
 }
 
 .list-bg-dark .list-hidden .list-link {
@@ -407,7 +407,7 @@
 }
 
 .sidebar-user-bg-dark {
-  background-color: #3b4248;
+  background-color: #222D32; /*#3b4248;*/
 }
 
 .sidebar-user-bg-dark .sidebar-user-link {
