@@ -422,7 +422,7 @@
 .scrollbar-bg-dark .ps__rail-y:focus .ps__thumb-y,
 .scrollbar-bg-dark .ps__rail-y:hover .ps__thumb-y,
 .scrollbar-bg-dark .ps__thumb-y {
-  background-color: #6f7c89;
+  background-color:  #222D32; /*#6f7c89;*/
 }
 
 .ps .ps__rail-y.ps--clicking,
